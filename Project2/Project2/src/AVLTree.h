@@ -20,7 +20,5 @@ public:
 	Gamedata*	Search(int id);
 };
 
-
-
 #endif
 

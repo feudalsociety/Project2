@@ -6,7 +6,7 @@
 using namespace std;
 class Manager{
 private:
-	AVLTree		*avl;	// AVL tree
+	AVLTree		*avl;		// AVL tree
 	BpTree		*bp;		// B+ tree
 
 public:

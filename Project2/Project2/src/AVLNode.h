@@ -9,7 +9,7 @@ private:
 	AVLNode*			pRight;
 	AVLNode*			pLeft;
 	Gamedata*			pGamedata;
-	int					mBF;
+	int					mBF; // balance factor
 
 public:
 	AVLNode(){
@@ -27,7 +27,7 @@ public:
 	AVLNode*	getRight(){return pRight;}
 	AVLNode*	getLeft(){return pLeft;}
 	Gamedata*	getGD(){return pGamedata;}
-	int				getBF(){return mBF;}
+	int	getBF(){return mBF;}
 };
 
 #endif

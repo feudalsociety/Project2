@@ -39,4 +39,16 @@ public:
 	char**	getTeamA() { return TeamA; }
 	char**	getTeamB() { return TeamB; }
 };
+
+ostream& operator<<(ostream& sm, Gamedata& data)
+{
+
+	return sm;
+}
+
+ifstream& operator>>(ifstream& sm, Gamedata& data)
+{
+	return sm;
+}
+
 #endif

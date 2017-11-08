@@ -7,7 +7,45 @@ Manager::~Manager() {
 }
 
 void Manager::run(const char* command_txt) {
+	ifstream i(command_txt);
+	char cmd[20];
+	i >> cmd;
+	if (strcmp(cmd, "LOAD") == 0)
+	{
+		char filename[20]; // file name buffer
+		// game_load.txt
+	}
+	else if (strcmp(cmd, "PRINT_PICK") == 0)
+	{
 
+	}
+	else if (strcmp(cmd, "PRINT_WINRATIO") == 0)
+	{
+
+	}
+	else if (strcmp(cmd, "PRINT_WINRATIO") == 0)
+	{
+
+	}
+	else if (strcmp(cmd, "SEARCH_CHARACTER") == 0)
+	{
+		char start[20]; // Anivia
+		char end[20];  // Trundle
+	}
+	else if (strcmp(cmd, "PRINT_CHARACTER") == 0)
+	{
+
+	}
+	else if (strcmp(cmd, "PRINT_GAME") == 0)
+	{
+
+	}
+	else if (strcmp(cmd, "UPDATE") == 0)
+	{
+		char filename[20]; // game_update.txt
+
+	}
+	i.close();
 }
 
 bool Manager::LOAD(char* loadfile) {
