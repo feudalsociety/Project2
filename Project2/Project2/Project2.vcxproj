@@ -32,6 +32,7 @@
   <ItemGroup>
     <ClCompile Include="src\AVLTree.cpp" />
     <ClCompile Include="src\BpTree.cpp" />
+    <ClCompile Include="src\Gamedata.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Manager.cpp" />
   </ItemGroup>

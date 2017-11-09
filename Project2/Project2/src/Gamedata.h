@@ -38,17 +38,10 @@ public:
 	int		getWinner() { return Winner; }
 	char**	getTeamA() { return TeamA; }
 	char**	getTeamB() { return TeamB; }
+
 };
 
-ostream& operator<<(ostream& sm, Gamedata& data)
-{
-
-	return sm;
-}
-
-ifstream& operator>>(ifstream& sm, Gamedata& data)
-{
-	return sm;
-}
+ostream& operator<<(ostream& sm, Gamedata& data);
+istream& operator>>(istream& sm, Gamedata& data);
 
 #endif

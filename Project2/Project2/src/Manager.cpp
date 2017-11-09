@@ -7,13 +7,20 @@ Manager::~Manager() {
 }
 
 void Manager::run(const char* command_txt) {
-	ifstream i(command_txt);
+	ifstream c(command_txt); // command_list.txt
 	char cmd[20];
-	i >> cmd;
+	c >> cmd;
 	if (strcmp(cmd, "LOAD") == 0)
 	{
-		char filename[20]; // file name buffer
-		// game_load.txt
+		char filename[20]; // file name buffer, game_load.txt
+		ifstream l(filename);
+		string line;
+		while (getline(l, line))
+		{
+			Gamedata * data = new Gamedata;
+
+		}
+		l.close();
 	}
 	else if (strcmp(cmd, "PRINT_PICK") == 0)
 	{
@@ -43,9 +50,11 @@ void Manager::run(const char* command_txt) {
 	else if (strcmp(cmd, "UPDATE") == 0)
 	{
 		char filename[20]; // game_update.txt
+		ifstream u(filename);
 
+		u.close();
 	}
-	i.close();
+	c.close();
 }
 
 bool Manager::LOAD(char* loadfile) {

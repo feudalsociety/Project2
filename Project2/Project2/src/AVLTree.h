@@ -20,5 +20,7 @@ public:
 	Gamedata*	Search(int id);
 };
 
+int GetHeight(AVLNode * pRoot);
+
 #endif
 

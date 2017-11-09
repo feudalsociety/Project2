@@ -13,6 +13,8 @@ using namespace std;
 #include <string>
 #include <functional>
 #include <iomanip>
+//#include <sstream> // string stream
+
 class Characterdata {
 private:
 	string Cname;//character name
